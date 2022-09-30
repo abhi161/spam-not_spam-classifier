@@ -8,7 +8,8 @@ from nltk.stem.porter import PorterStemmer
 import string
 import requests
 from streamlit_lottie import st_lottie
-
+import warnings
+warnings.filterwarnings("ignore")
 
 def load_lottieurl(url):
     r = requests.get(url)
